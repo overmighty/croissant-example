@@ -1,0 +1,30 @@
+plugins {
+    id 'java-library'
+    id 'com.github.johnrengelman.shadow' version '5.1.0'
+}
+
+group 'com.github.overmighty'
+version '1.0.0'
+
+sourceCompatibility = JavaVersion.VERSION_1_8
+
+repositories {
+    jcenter()
+    maven { url 'https://papermc.io/repo/repository/maven-public/' }
+}
+
+dependencies {
+    implementation 'com.destroystokyo.paper:paper-api:1.14.4-R0.1-SNAPSHOT'
+    implementation 'com.github.overmighty:croissant:1.0.0'
+}
+
+shadowJar {
+    dependencies {
+        // Include Croissant in the plugin's fat JAR
+        include(dependency('com.github.overmighty:croissant'))
+    }
+
+    // Relocate Croissant to avoid conflicts with other Bukkit plugins that also use Croissant
+    // For your plugins, replace com.github.overmighty.example with your plugin's base package
+    relocate 'com.github.overmighty.croissant', 'com.github.overmighty.example.croissant'
+}

@@ -1,0 +1,15 @@
+name: Example
+description: Example plugin to showcase the Croissant library.
+version: '1.0.0'
+author: OverMighty
+website: https://github.com/OverMighty/croissant-example
+
+main: com.github.overmighty.example.Example
+
+# For Bukkit/Minecraft 1.13+
+api-version: "1.13"
+
+permissions:
+  example.kick:
+    description: Allows the use of the /kick command.
+    default: op
