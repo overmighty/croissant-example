@@ -7,7 +7,7 @@ website: https://github.com/OverMighty/croissant-example
 main: com.github.overmighty.example.Example
 
 # For Bukkit/Minecraft 1.13+
-api-version: "1.13"
+api-version: '1.13'
 
 permissions:
   example.kick:
