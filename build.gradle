@@ -1,6 +1,6 @@
 plugins {
     id 'java-library'
-    id 'com.github.johnrengelman.shadow' version '5.1.0'
+    id 'com.github.johnrengelman.shadow' version '5.2.0'
 }
 
 group 'com.github.overmighty'
@@ -14,8 +14,8 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.destroystokyo.paper:paper-api:1.14.4-R0.1-SNAPSHOT'
-    implementation 'com.github.overmighty:croissant:1.0.0'
+    implementation 'com.destroystokyo.paper:paper-api:1.15.1-R0.1-SNAPSHOT'
+    implementation 'com.github.overmighty:croissant:1.0.1'
 }
 
 shadowJar {
