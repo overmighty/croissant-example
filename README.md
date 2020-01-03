@@ -15,7 +15,7 @@ use Croissant and to help them get started with it.
 Features of both the command framework and the GUI framework of Croissant are
 demonstrated with example commands.
 
-The plugin supports Bukkit/Spigot/Paper 1.8.x to 1.14.x.
+The plugin supports Bukkit/Spigot/Paper 1.8.x to 1.15.x.
 
 ## Building
 
